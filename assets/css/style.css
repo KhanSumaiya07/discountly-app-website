@@ -5984,12 +5984,13 @@ z .slider-area .hero-cap h2 {
 
 .service-area .services-caption {
     /* background: #fff; */
-    padding: 50px 45px 40px;
+    padding:40px;
     border: 1px solid #e6e6ed;
     border-radius: 7px;
     transition: all .3s ease 0s;
-    height: 380px;
-    /* box-shadow: 0 1px 8px 0 rgba(35, 181, 185, 0.15); */
+    height: 300px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .05), 0 4px 6px 0 rgba(0, 0, 0, .02);
+   
 }
 .service-area .services-caption:hover{
 box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
@@ -6001,45 +6002,14 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
     }
 }
 
-.service-area .services-caption .service-icon {
-    display: inline-block;
-    position: relative
-}
-
-.service-area .services-caption .service-icon::before {
-    background-image: url(../img/shape/dot-bg.png);
-    content: "";
+.service-area .services-caption .service-icon-dis {
+    height: 80px;
     width: 80px;
-    height: 135px;
-    position: absolute;
-    right: -29px;
-    top: -35px;
-    z-index: 0;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s
+    background: #54B9C9;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
-.service-area .services-caption .service-icon .s-icon {
-    position: relative;
-    /* color: #fff; */
-    /* font-size: 40px; */
-    height: 105px;
-    width: 105px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    /* line-height: 105px; */
-    border-radius: 50%;
-    /* text-align: center; */
-    background: #54B9C9;
-    margin-bottom: 42px;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s
-}
 
 /* Define custom classes for different sizes */
 .icon-size-70 {
@@ -6061,7 +6031,7 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
 }
 
 
-.service-area .services-caption .service-icon .s-icon .s-icon-img img{
+.service-area .services-caption .service-icon-dis img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -6072,7 +6042,7 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
     font-size: 24px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 27px;
+    margin-bottom: 10px;
     display: inline-block
 }
 
@@ -6087,11 +6057,9 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
     /* border: 1px solid #b8a2ff */
 }
 
-.services-caption:hover .service-icon::before {
-    right: -32px
-}
 
-/* .services-caption:hover .service-icon span {
+
+/* .services-caption:hover .service-icon-dis span {
     background: #8697c4
 } */
 
@@ -6102,11 +6070,8 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
     box-shadow: 0 1px 8px 0 rgba(35, 181, 185, 0.15);
 }
 
-.services-caption.active .service-icon::before {
-    right: -32px
-}
 
-.services-caption.active .service-icon span {
+.services-caption.active .service-icon-dis span {
     /* background: #8697c4 */
 
 }
@@ -6353,7 +6318,7 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
 }
 
 .pricing-card-area .single-card .card-top h4 {
-    color: #6a56a6;
+    color: #ea1b3d;
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 26px;
@@ -6362,7 +6327,7 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
 }
 
 .pricing-card-area .single-card .card-top h4 span {
-    color: #6a56a6;
+    color: #ea1b3d;
     font-size: 16px
 }
 
@@ -7466,6 +7431,9 @@ body {
     padding-top: 100px;
     position: relative;
     background-color: #FFF9ED;
+    /* background-image: url('/assets/img/bannerdiscountly.png'); */
+    background-position: center;
+    background-size: cover;
     padding-left: 85px;
 }
 
@@ -7493,6 +7461,17 @@ body {
 
 
 @media only screen and (max-width: 900px) {
+    .banner-container{
+        padding-left: 50px;
+    }
+    .text-overlay{
+        width: 80%;
+    }
+    .text-overlay h1{
+        font-size: 35px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
     .career-section-area.section-padd4{
         padding:100px 30px;
     }
@@ -7644,3 +7623,4 @@ padding: 0;
     height: 50px;
     width: 50px;
 }
+
