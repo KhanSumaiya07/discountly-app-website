@@ -5391,7 +5391,7 @@ del {
     align-items: center;
 }
 .ann-logo img {
-    height: 100px;
+    height: 50px;
     width: auto;
     object-fit: cover;
 }
@@ -5983,19 +5983,47 @@ z .slider-area .hero-cap h2 {
 }
 
 .service-area .services-caption {
-    /* background: #fff; */
-    padding:40px;
+    background: #fff;
+    /* padding:40px; */
     border: 1px solid #e6e6ed;
     border-radius: 7px;
     transition: all .3s ease 0s;
-    height: 300px;
+    height: 350px;
+    width: 550px;
+    flex-grow: 0;
+    flex-shrink: 0;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, .05), 0 4px 6px 0 rgba(0, 0, 0, .02);
-   
+    display: flex;  
+    margin-bottom: 1rem;
 }
+
+.service-area .services-caption .left-img-container{
+    width: 50%;
+    height: 100%;
+    margin-left: -28px;
+    transform: scale(1.04);
+    /* background-color: #16161a; */
+    transition: all .3s ease 0s;
+
+}
+.service-area .services-caption .left-img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.service-area .services-caption .right-info-container{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+
 .service-area .services-caption:hover{
 box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
 }
-
+.service-area .services-caption:hover .left-img-container{
+    transform: scale(1.06);
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .service-area .services-caption {
         padding: 84px 25px 56px
@@ -6269,19 +6297,26 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
 }
 
 .pricing-card-area {
-    margin-top: -295px
+    margin-top: -295px;
+    padding: 0 40px;
+    padding-bottom: 80px;
 }
-
+.pricing-card-area .pricing-card-width{
+    width:289px !important;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
 .pricing-card-area .single-card {
     position: relative;
     background: #fff;
-    padding: 40px 25px;
+    padding: 25px;
     border-radius: 6px;
     box-shadow: 0px 0px 9px 0px rgba(131, 93, 248, 0.07);
     -webkit-transition: .4s;
     -moz-transition: .4s;
     -o-transition: .4s;
-    transition: .4s
+    transition: .4s;
+    height: 450px;
 }
 
 .pricing-card-area .single-card::before {
@@ -6304,38 +6339,63 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
         display: none
     }
 }
+.pricing-card-area .pricing-container .pricing-row{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 
 .pricing-card-area .single-card .card-top {
     border-bottom: 2px solid #f4f4f4;
-    margin-bottom: 46px
+    margin-bottom: 25px;
+    height: 30%;
 }
 
 .pricing-card-area .single-card .card-top span {
-    color: #57667e;
-    font-size: 24px;
-    margin-bottom: 19px;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 10px;
     display: inline-block
 }
-
+.pricing-card-area .single-card .card-top .save-msg{
+    font-size: 16px;
+    color: darkgreen;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
 .pricing-card-area .single-card .card-top h4 {
-    color: #ea1b3d;
-    font-size: 50px;
+    color: #000;
+    font-size: 24px;
     font-weight: 500;
-    margin-bottom: 26px;
+    /* margin-bottom: 26px; */
     padding-right: 3px;
     font-family: "Poppins", sans-serif
 }
 
 .pricing-card-area .single-card .card-top h4 span {
-    color: #ea1b3d;
+    color: #343333;
     font-size: 16px
 }
 
+.pricing-card-area .single-card .card-bottom{
+    height: 70%;
+}
+
+.pricing-card-area .single-card .card-bottom ul
+{
+    margin: 0;
+    padding: 0;
+    height: 80%;
+}
 .pricing-card-area .single-card .card-bottom ul li {
     color: #717081;
     font-weight: 300;
-    margin-bottom: 16px;
-    font-size: 16px
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
 }
 
 .pricing-card-area .single-card .card-bottom ul li:last-child {
@@ -6379,7 +6439,16 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
 .our-customer .our-customer-wrapper {
     /* padding: 0 134px; */
     position: relative;
+    display: flex;
+    flex-direction: column;
+    
 }
+
+.our-customer .our-customer-wrapper button{
+    border: none;
+    background: transparent;
+}
+
 .our-customer .our-customer-wrapper .carousel-item{
     background-color: #fff;
     border-radius: 10px;
@@ -7623,4 +7692,16 @@ padding: 0;
     height: 50px;
     width: 50px;
 }
-
+.about-discountly-container{
+    padding: 0 30px;
+}
+.about-discountly-container button{
+    border: none;
+    background: transparent;
+    margin-top: 40px;
+}
+.discountly-features ul{
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+}
