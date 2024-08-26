@@ -6313,14 +6313,14 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
 .pricing-card-area .single-card {
     position: relative;
     background: #fff;
-    padding: 25px;
+    padding:25px;
     border-radius: 6px;
     box-shadow: 0px 0px 9px 0px rgba(131, 93, 248, 0.07);
     -webkit-transition: .4s;
     -moz-transition: .4s;
     -o-transition: .4s;
     transition: .4s;
-    height: 450px;
+    height: 470px;
 }
 
 .pricing-card-area .single-card::before {
@@ -6387,12 +6387,21 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
 .pricing-card-area .single-card .card-bottom{
     height: 70%;
 }
-
+.pricing-card-area .single-card .card-bottom button{
+    width: 100%;
+    border: none;
+    background: transparent;
+    height: 30%;
+}
+.pricing-card-area .single-card .card-bottom .radius-btn{
+    padding: 20px 35px;
+    border-radius: 10px;
+}
 .pricing-card-area .single-card .card-bottom ul
 {
     margin: 0;
     padding: 0;
-    height: 80%;
+    height: 70%;
 }
 .pricing-card-area .single-card .card-bottom ul li {
     color: #717081;
@@ -6400,6 +6409,9 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
     margin-bottom: 8px;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
+    list-style-type: disc;
+    margin-left: 10px;
+    /* position: relative; */
 }
 
 .pricing-card-area .single-card .card-bottom ul li:last-child {
@@ -7517,7 +7529,10 @@ body {
     width: 80% !important;
 }
 /* ------responsive about us css-------  */
-
+.banner-container button{
+    border: none;
+    background-color: transparent;
+}
 
 @media only screen and (max-width: 900px) {
     .banner-container{
