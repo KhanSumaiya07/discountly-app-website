@@ -5990,13 +5990,13 @@ z .slider-area .hero-cap h2 {
     background: #fff;
     /* padding:40px; */
     border: 1px solid #e6e6ed;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .05), 0 4px 6px 0 rgba(0, 0, 0, .02);
     border-radius: 7px;
     transition: all .3s ease 0s;
     height: 350px;
     width: 550px;
     flex-grow: 0;
     flex-shrink: 0;
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .05), 0 4px 6px 0 rgba(0, 0, 0, .02);
     display: flex;  
     margin-bottom: 1rem;
 }
@@ -6321,6 +6321,8 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
     -o-transition: .4s;
     transition: .4s;
     height: 470px;
+    border: 1px solid #C0C0C7;
+    box-shadow: 0 4px 6px rgba(128, 128, 145, 0.3);
 }
 
 .pricing-card-area .single-card::before {
@@ -6434,7 +6436,8 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
 }
 
 .pricing-card-area .single-card:hover {
-    box-shadow: 0px 10px 30px 0px rgba(133, 66, 189, 0.1)
+    box-shadow: 0px 10px 30px 0px rgba(133, 66, 189, 0.1);
+    transform: scale(1.02);
 }
 
 .pricing-card-area .single-card:hover::before {
@@ -6468,6 +6471,8 @@ box-shadow: 0 2px 8px 0 hsla(0, 0%, 85.5%, .5);
 .our-customer .our-customer-wrapper .carousel-item{
     background-color: #fff;
     border-radius: 10px;
+    border: 1px solid #e6e6ed;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .05), 0 4px 6px 0 rgba(0, 0, 0, .02);
 }
 /* @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .our-customer .our-customer-wrapper {
@@ -7499,18 +7504,22 @@ body {
 .banner-container{
     /* height: 100vh; */
     width: 100%;
-    padding-top: 100px;
+    margin-top: 100px;
+    /* padding-top: 100px; */
     position: relative;
-    background-color: #FFF9ED;
-    /* background-image: url('/assets/img/bannerdiscountly.png'); */
+    background-image: url('/assets/img/hero/imgpsh_fullsize_anim\ \(4\).png');
     background-position: center;
     background-size: cover;
-    padding-left: 85px;
+    background-color: #FFF9ED;
+    background-position: center;
+    background-size: cover;
+    /* padding-left: 85px; */
+    padding: 60px;
 }
 
 .text-overlay{
     width: 60%;
-    padding:40px 0;
+    /* padding:40px 0; */
 }
 
 .text-overlay h1{
@@ -7741,4 +7750,13 @@ justify-content: center;
     .service-area .services-caption .right-info-container{
         width: 100%;
     }
+}
+
+#discountly .container{
+    background: #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 20px;
+    border: 1px solid #C0C0C7;
+    box-shadow: 0 4px 6px rgba(128, 128, 145, 0.3);
 }
