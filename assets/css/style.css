@@ -5993,18 +5993,18 @@ z .slider-area .hero-cap h2 {
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, .05), 0 4px 6px 0 rgba(0, 0, 0, .02);
     border-radius: 7px;
     transition: all .3s ease 0s;
-    height: 350px;
+    height: 400px;
     width: 550px;
     flex-grow: 0;
     flex-shrink: 0;
     display: flex;  
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .service-area .services-caption .left-img-container{
     width: 50%;
     height: 100%;
-    margin-left: -28px;
+    margin-left: -10px;
     transform: scale(1.04);
     /* background-color: #16161a; */
     transition: all .3s ease 0s;
