@@ -7540,7 +7540,7 @@ body {
     margin-bottom: 32px;
 
 }
-.text-overlay h1 mark{
+.text-overlay h1 mark, .text-overlay p mark{
     color: #ea1b3d;
     background-color: transparent;
     margin: 0;
