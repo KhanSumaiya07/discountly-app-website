@@ -7501,7 +7501,14 @@ body {
 }
 
 /* ----hero banner ----  */
+#home{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .banner-container{
+    max-width: 100rem;
     width: 100%;
     margin-top: 100px;
     position: relative;
