@@ -7562,6 +7562,9 @@ body {
     
   }
 @media only screen and (max-width: 500px){
+    .ann-logo img {
+        height: 35px;
+    }
     #discountly{
         padding: 60px 15px;
     }
