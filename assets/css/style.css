@@ -7760,6 +7760,11 @@ padding: 0;
 .about-discountly-container{
     padding: 0 30px;
 }
+.about-discountly-container li{
+    list-style-type: disc;
+    padding: 20px 0;
+    margin-left: 20px;
+}
 .about-discountly-container button{
     border: none;
     background: transparent;
