@@ -7502,24 +7502,28 @@ body {
 
 /* ----hero banner ----  */
 .banner-container{
-    /* height: 100vh; */
     width: 100%;
     margin-top: 100px;
-    /* padding-top: 100px; */
     position: relative;
-    background-image: url('/assets/img/hero/home_hero_banner.png');
-    background-position: center;
-    background-size: cover;
     background-color: #FFF9ED;
-    background-position: center;
-    background-size: cover;
-    /* padding-left: 85px; */
-    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-overlay{
     width: 60%;
-    /* padding:40px 0; */
+    padding: 60px;
+}
+.banner-container .image-banner{
+    width: 40%;
+    height: 100%;
+}
+
+.banner-container .image-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .text-overlay h1{
@@ -7544,10 +7548,36 @@ body {
     border: none;
     background-color: transparent;
 }
-
+@media (min-width: 900px) and (max-width: 1000px) {
+    .banner-container {
+      margin-top: 70px; 
+    }
+    
+  }
+@media only screen and (max-width: 500px){
+    #discountly{
+        padding: 60px 15px;
+    }
+    #discountly h2{
+        margin-bottom: 40px;
+    }
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-container .text-overlay{
+        width: 100%;
+        padding: 60px 40px;
+    }
+    .banner-container .image-banner{
+        width: 100%;
+    }
+    .about-discountly-container{
+        padding: 0 15px !important;
+    }
+}
 @media only screen and (max-width: 900px) {
     .banner-container{
-        margin-top: 50px;
+        margin-top: 60px;
 
     }
     .text-overlay{
